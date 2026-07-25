@@ -28,7 +28,7 @@
       <rect x="-19" y="-0.5" width="38" height="20" rx="10" fill="url(#metal)" />
       <ellipse cx="0" cy="28" rx="18" ry="6" fill="#f8fafc" opacity="0.35" />
     </g>
-    <animateTransform xlink:href="#sway" attributeName="transform" type="rotate" values="-6 0 0; 4 0 0; -3 0 0; 2 0 0; 0 0 0" keyTimes="0;0.25;0.55;0.8;1" dur="4.2s" repeatCount="indefinite" />
+    <animateTransform href="#sway" attributeName="transform" type="rotate" values="-6 0 0; 4 0 0; -3 0 0; 2 0 0; 0 0 0" keyTimes="0;0.25;0.55;0.8;1" dur="4.2s" repeatCount="indefinite" />
   </g>
   <g transform="translate(30 120)">
     <rect x="0" y="0" width="260" height="340" rx="28" ry="28" fill="#061427" stroke="#0b537d" stroke-width="2" filter="url(#sling)" />
