@@ -1,7 +1,4 @@
-<picture>
-  <source srcset="banner-light.svg?v=1" media="(prefers-color-scheme: light)">
-  <img src="banner.svg?v=1" alt="Naveen — Java Full Stack Developer" width="100%" />
-</picture>
+![Naveen — Java Full Stack Developer](banner.svg?v=1)
 
 # Naveen — Java Full Stack Developer
 
