@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Naveen trophy showcase">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8e469" />
+      <stop offset="100%" stop-color="#d6b53c" />
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="#03111f" />
+  <text x="40" y="46" font-family="Inter, sans-serif" font-size="26" fill="#dbeafe">Trophy Room</text>
+  <g font-family="JetBrains Mono, monospace" font-size="14" fill="#cbd5e1">
+    <g transform="translate(40 90)">
+      <rect x="0" y="0" width="166" height="192" rx="20" fill="#071a2c" />
+      <path d="M83 44 L72 60 H94 L83 44" fill="#ffd966" />
+      <path d="M60 68 C58 94 60 132 60 132 H106 C106 132 108 94 106 68 Z" fill="#f8e469" />
+      <rect x="66" y="132" width="34" height="36" rx="14" fill="#d6b53c" />
+      <text x="20" y="170" font-family="Inter, sans-serif" font-size="16" fill="#e2faff">Project Builder</text>
+      <text x="20" y="190" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8">Ecommerce, portfolio, landing pages.</text>
+    </g>
+    <g transform="translate(242 90)">
+      <rect x="0" y="0" width="166" height="192" rx="20" fill="#071a2c" />
+      <path d="M44 78 H122 V108 H44 Z" fill="#0f172a" />
+      <rect x="48" y="108" width="68" height="20" fill="#ffd966" />
+      <rect x="76" y="128" width="12" height="26" fill="#d6b53c" />
+      <path d="M60 64 C74 42 116 42 130 64 L130 84 H60 Z" fill="#f8e469" />
+      <text x="20" y="170" font-family="Inter, sans-serif" font-size="16" fill="#e2faff">Code Refinement</text>
+      <text x="20" y="190" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8">Clean architecture and maintainability.</text>
+    </g>
+    <g transform="translate(444 90)">
+      <rect x="0" y="0" width="166" height="192" rx="20" fill="#071a2c" />
+      <path d="M40 56 L126 56 L110 92 H56 Z" fill="#f8e469" />
+      <rect x="68" y="92" width="28" height="24" fill="#d6b53c" />
+      <circle cx="82" cy="136" r="18" fill="#ffd966" />
+      <text x="20" y="170" font-family="Inter, sans-serif" font-size="16" fill="#e2faff">Growth Mindset</text>
+      <text x="20" y="190" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8">Learning, feedback, and improvement.</text>
+    </g>
+  </g>
+  <rect x="40" y="90" width="166" height="192" rx="20" fill="url(#shine)" opacity="0.15"><animate attributeName="opacity" values="0.15;0.05;0.15" dur="3.2s" repeatCount="indefinite" /></rect>
+  <rect x="242" y="90" width="166" height="192" rx="20" fill="url(#shine)" opacity="0.15"><animate attributeName="opacity" values="0.05;0.18;0.05" dur="3.6s" repeatCount="indefinite" /></rect>
+  <rect x="444" y="90" width="166" height="192" rx="20" fill="url(#shine)" opacity="0.15"><animate attributeName="opacity" values="0.1;0.22;0.1" dur="4s" repeatCount="indefinite" /></rect>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Naveen local stats card">
+  <defs>
+    <linearGradient id="ringGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="row" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="#041224" />
+  <text x="40" y="46" font-family="Inter, sans-serif" font-size="26" fill="#dbeafe">Local Stats</text>
+  <g transform="translate(40 40)">
+    <circle cx="160" cy="140" r="100" fill="none" stroke="#0f2b45" stroke-width="24" />
+    <circle cx="160" cy="140" r="100" fill="none" stroke="url(#ringGradient)" stroke-width="24" stroke-dasharray="628" stroke-dashoffset="628">
+      <animate attributeName="stroke-dashoffset" values="628;251.2" dur="1.5s" fill="freeze" />
+    </circle>
+    <text x="110" y="150" font-family="Inter, sans-serif" font-size="40" fill="#ffffff">92%</text>
+    <text x="100" y="176" font-family="Inter, sans-serif" font-size="16" fill="#94a3b8">Backend</text>
+  </g>
+  <g transform="translate(320 46)" font-family="JetBrains Mono, monospace" font-size="14" fill="#cbd5e1">
+    <text x="0" y="0">Cloud</text>
+    <rect x="0" y="12" width="260" height="14" rx="7" fill="#0d324a" />
+    <rect x="0" y="12" width="176" height="14" rx="7" fill="url(#row)"><animate attributeName="width" values="0;176" dur="1.2s" begin="0.3s" fill="freeze" /></rect>
+    <text x="232" y="11" font-family="Inter, sans-serif" font-size="12" fill="#dbeafe">70%</text>
+    <text x="0" y="42">Frontend</text>
+    <rect x="0" y="54" width="260" height="14" rx="7" fill="#0d324a" />
+    <rect x="0" y="54" width="210" height="14" rx="7" fill="url(#row)"><animate attributeName="width" values="0;210" dur="1.2s" begin="0.5s" fill="freeze" /></rect>
+    <text x="232" y="53" font-family="Inter, sans-serif" font-size="12" fill="#dbeafe">81%</text>
+    <text x="0" y="84">Databases</text>
+    <rect x="0" y="96" width="260" height="14" rx="7" fill="#0d324a" />
+    <rect x="0" y="96" width="196" height="14" rx="7" fill="url(#row)"><animate attributeName="width" values="0;196" dur="1.2s" begin="0.7s" fill="freeze" /></rect>
+    <text x="232" y="95" font-family="Inter, sans-serif" font-size="12" fill="#dbeafe">75%</text>
+    <text x="0" y="126">Problem Solving</text>
+    <rect x="0" y="138" width="260" height="14" rx="7" fill="#0d324a" />
+    <rect x="0" y="138" width="232" height="14" rx="7" fill="url(#row)"><animate attributeName="width" values="0;232" dur="1.2s" begin="0.9s" fill="freeze" /></rect>
+    <text x="232" y="137" font-family="Inter, sans-serif" font-size="12" fill="#dbeafe">89%</text>
+  </g>
+</svg>
