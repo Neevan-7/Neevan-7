@@ -1,0 +1,129 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bgGradT" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1a0b2e"/>
+    <stop offset="100%" stop-color="#2d1247"/>
+  </linearGradient>
+  <linearGradient id="shineGradT" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#ffffff" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="roundedT"><rect width="900" height="200" rx="16"/></clipPath>
+  <style>
+    .trophyCell { opacity:0; animation: cellPop 0.6s cubic-bezier(.34,1.56,.64,1) forwards; transform-box: fill-box; transform-origin: center; }
+    @keyframes cellPop { 0% {opacity:0; transform:scale(.6) translateY(16px);} 100% {opacity:1; transform:scale(1) translateY(0);} }
+    .rankGlow { animation: glowPulseT 2.4s ease-out forwards; }
+    @keyframes glowPulseT { 0% {opacity:0.9; r:24;} 100% {opacity:0; r:44;} }
+    .cellShine { animation: shineSweepT 5s ease-in-out infinite; opacity:0; }
+    @keyframes shineSweepT { 0% { transform:translateY(-40px) rotate(20deg); opacity:0; } 10% {opacity:.8;} 30% { transform:translateY(260px) rotate(20deg); opacity:0; } 100% { transform:translateY(260px) rotate(20deg); opacity:0; } }
+  </style>
+</defs>
+<g clip-path="url(#roundedT)">
+  <rect width="900" height="200" fill="url(#bgGradT)"/>
+  <rect x="0.5" y="0.5" width="899" height="199" rx="15.5" fill="none" stroke="#a855f7" stroke-opacity="0.35"/>
+  
+    <g class="trophyCell" style="animation-delay:0.25s" transform="translate(75.0,0)">
+      <rect x="-65.0" y="14" width="130.0" height="172" rx="14" fill="rgba(255,255,255,0.045)" stroke="#ff6ec7" stroke-opacity="0.4"/>
+      <clipPath id="cellClip0"><rect x="-65.0" y="14" width="130.0" height="172" rx="14"/></clipPath>
+      <g transform="translate(0,68)" stroke="#ff6ec7" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-14,-16 h28 v10 a14,14 0 0 1 -28,0 z"/>
+      <path d="M-14,-12 h-8 a2,2 0 0 0 -2,2 v2 a10,10 0 0 0 10,10"/>
+      <path d="M14,-12 h8 a2,2 0 0 1 2,2 v2 a10,10 0 0 1 -10,10"/>
+      <line x1="0" y1="4" x2="0" y2="12"/>
+      <path d="M-10,12 h20 l-2,6 h-16 z"/>
+    </g>
+      <circle class="rankGlow" style="animation-delay:0.55s" cx="0" cy="68" r="34" fill="none" stroke="#ff6ec7" stroke-width="1.5" opacity="0"/>
+      <text x="0" y="118" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11.5" fill="#e8d5ff">Commits</text>
+      <text x="0" y="150" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="26" font-weight="800" fill="#ff6ec7">A+</text>
+      <g clip-path="url(#cellClip0)">
+        <rect class="cellShine" style="animation-delay:2.20s" x="-115.0" y="0" width="30" height="220" fill="url(#shineGradT)" transform="rotate(20)"/>
+      </g>
+    </g>
+    <g class="trophyCell" style="animation-delay:0.41s" transform="translate(225.0,0)">
+      <rect x="-65.0" y="14" width="130.0" height="172" rx="14" fill="rgba(255,255,255,0.045)" stroke="#c084fc" stroke-opacity="0.4"/>
+      <clipPath id="cellClip1"><rect x="-65.0" y="14" width="130.0" height="172" rx="14"/></clipPath>
+      <g transform="translate(0,68)" stroke="#c084fc" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-14,-16 h28 v10 a14,14 0 0 1 -28,0 z"/>
+      <path d="M-14,-12 h-8 a2,2 0 0 0 -2,2 v2 a10,10 0 0 0 10,10"/>
+      <path d="M14,-12 h8 a2,2 0 0 1 2,2 v2 a10,10 0 0 1 -10,10"/>
+      <line x1="0" y1="4" x2="0" y2="12"/>
+      <path d="M-10,12 h20 l-2,6 h-16 z"/>
+    </g>
+      <circle class="rankGlow" style="animation-delay:0.71s" cx="0" cy="68" r="34" fill="none" stroke="#c084fc" stroke-width="1.5" opacity="0"/>
+      <text x="0" y="118" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11.5" fill="#e8d5ff">Stars</text>
+      <text x="0" y="150" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="26" font-weight="800" fill="#c084fc">B+</text>
+      <g clip-path="url(#cellClip1)">
+        <rect class="cellShine" style="animation-delay:2.35s" x="-115.0" y="0" width="30" height="220" fill="url(#shineGradT)" transform="rotate(20)"/>
+      </g>
+    </g>
+    <g class="trophyCell" style="animation-delay:0.57s" transform="translate(375.0,0)">
+      <rect x="-65.0" y="14" width="130.0" height="172" rx="14" fill="rgba(255,255,255,0.045)" stroke="#a855f7" stroke-opacity="0.4"/>
+      <clipPath id="cellClip2"><rect x="-65.0" y="14" width="130.0" height="172" rx="14"/></clipPath>
+      <g transform="translate(0,68)" stroke="#a855f7" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-14,-16 h28 v10 a14,14 0 0 1 -28,0 z"/>
+      <path d="M-14,-12 h-8 a2,2 0 0 0 -2,2 v2 a10,10 0 0 0 10,10"/>
+      <path d="M14,-12 h8 a2,2 0 0 1 2,2 v2 a10,10 0 0 1 -10,10"/>
+      <line x1="0" y1="4" x2="0" y2="12"/>
+      <path d="M-10,12 h20 l-2,6 h-16 z"/>
+    </g>
+      <circle class="rankGlow" style="animation-delay:0.87s" cx="0" cy="68" r="34" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0"/>
+      <text x="0" y="118" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11.5" fill="#e8d5ff">PullRequest</text>
+      <text x="0" y="150" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="26" font-weight="800" fill="#a855f7">A</text>
+      <g clip-path="url(#cellClip2)">
+        <rect class="cellShine" style="animation-delay:2.50s" x="-115.0" y="0" width="30" height="220" fill="url(#shineGradT)" transform="rotate(20)"/>
+      </g>
+    </g>
+    <g class="trophyCell" style="animation-delay:0.73s" transform="translate(525.0,0)">
+      <rect x="-65.0" y="14" width="130.0" height="172" rx="14" fill="rgba(255,255,255,0.045)" stroke="#ec4899" stroke-opacity="0.4"/>
+      <clipPath id="cellClip3"><rect x="-65.0" y="14" width="130.0" height="172" rx="14"/></clipPath>
+      <g transform="translate(0,68)" stroke="#ec4899" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-14,-16 h28 v10 a14,14 0 0 1 -28,0 z"/>
+      <path d="M-14,-12 h-8 a2,2 0 0 0 -2,2 v2 a10,10 0 0 0 10,10"/>
+      <path d="M14,-12 h8 a2,2 0 0 1 2,2 v2 a10,10 0 0 1 -10,10"/>
+      <line x1="0" y1="4" x2="0" y2="12"/>
+      <path d="M-10,12 h20 l-2,6 h-16 z"/>
+    </g>
+      <circle class="rankGlow" style="animation-delay:1.03s" cx="0" cy="68" r="34" fill="none" stroke="#ec4899" stroke-width="1.5" opacity="0"/>
+      <text x="0" y="118" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11.5" fill="#e8d5ff">Repositories</text>
+      <text x="0" y="150" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="26" font-weight="800" fill="#ec4899">A-</text>
+      <g clip-path="url(#cellClip3)">
+        <rect class="cellShine" style="animation-delay:2.65s" x="-115.0" y="0" width="30" height="220" fill="url(#shineGradT)" transform="rotate(20)"/>
+      </g>
+    </g>
+    <g class="trophyCell" style="animation-delay:0.89s" transform="translate(675.0,0)">
+      <rect x="-65.0" y="14" width="130.0" height="172" rx="14" fill="rgba(255,255,255,0.045)" stroke="#f472b6" stroke-opacity="0.4"/>
+      <clipPath id="cellClip4"><rect x="-65.0" y="14" width="130.0" height="172" rx="14"/></clipPath>
+      <g transform="translate(0,68)" stroke="#f472b6" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-14,-16 h28 v10 a14,14 0 0 1 -28,0 z"/>
+      <path d="M-14,-12 h-8 a2,2 0 0 0 -2,2 v2 a10,10 0 0 0 10,10"/>
+      <path d="M14,-12 h8 a2,2 0 0 1 2,2 v2 a10,10 0 0 1 -10,10"/>
+      <line x1="0" y1="4" x2="0" y2="12"/>
+      <path d="M-10,12 h20 l-2,6 h-16 z"/>
+    </g>
+      <circle class="rankGlow" style="animation-delay:1.19s" cx="0" cy="68" r="34" fill="none" stroke="#f472b6" stroke-width="1.5" opacity="0"/>
+      <text x="0" y="118" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11.5" fill="#e8d5ff">Followers</text>
+      <text x="0" y="150" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="26" font-weight="800" fill="#f472b6">B</text>
+      <g clip-path="url(#cellClip4)">
+        <rect class="cellShine" style="animation-delay:2.80s" x="-115.0" y="0" width="30" height="220" fill="url(#shineGradT)" transform="rotate(20)"/>
+      </g>
+    </g>
+    <g class="trophyCell" style="animation-delay:1.05s" transform="translate(825.0,0)">
+      <rect x="-65.0" y="14" width="130.0" height="172" rx="14" fill="rgba(255,255,255,0.045)" stroke="#ffd166" stroke-opacity="0.4"/>
+      <clipPath id="cellClip5"><rect x="-65.0" y="14" width="130.0" height="172" rx="14"/></clipPath>
+      <g transform="translate(0,68)" stroke="#ffd166" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-14,-16 h28 v10 a14,14 0 0 1 -28,0 z"/>
+      <path d="M-14,-12 h-8 a2,2 0 0 0 -2,2 v2 a10,10 0 0 0 10,10"/>
+      <path d="M14,-12 h8 a2,2 0 0 1 2,2 v2 a10,10 0 0 1 -10,10"/>
+      <line x1="0" y1="4" x2="0" y2="12"/>
+      <path d="M-10,12 h20 l-2,6 h-16 z"/>
+    </g>
+      <circle class="rankGlow" style="animation-delay:1.35s" cx="0" cy="68" r="34" fill="none" stroke="#ffd166" stroke-width="1.5" opacity="0"/>
+      <text x="0" y="118" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11.5" fill="#e8d5ff">Experience</text>
+      <text x="0" y="150" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="26" font-weight="800" fill="#ffd166">S</text>
+      <g clip-path="url(#cellClip5)">
+        <rect class="cellShine" style="animation-delay:2.95s" x="-115.0" y="0" width="30" height="220" fill="url(#shineGradT)" transform="rotate(20)"/>
+      </g>
+    </g>
+</g>
+</svg>
